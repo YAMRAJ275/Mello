@@ -59,7 +59,7 @@ module.exports.run = async function ({ Users, Threads, api, event }) {
   ];
   const ratings = ["💘 100%", "💫 99.9%", "🔥 98%", "❤️ 101%", "🌟 97.5%", "👑 96.69%", "🕊️ 100.0%"];
 
-  const header = "✨ Ye jodi likhi hai god ne ✨\n💢 Kalm tha... Raj xwd 👑";
+  const header = "✨ Ye jodi likhi hai god ne ✨\n💢 Kalm tha... 𝐑𝐈𝐒𝐇𝐔 𝐗 𝐑𝐈𝐒𝐇𝐈𝐊𝐄𝐒𝐇👑";
   const bg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
   const shayari = shayaris[Math.floor(Math.random() * shayaris.length)];
   const rating = ratings[Math.floor(Math.random() * ratings.length)];
@@ -98,7 +98,7 @@ module.exports.run = async function ({ Users, Threads, api, event }) {
 
   // 📨 Send message
   return api.sendMessage({
-    body: `${header}\n━━━━━━━━━━━━━━\n💑 ${name1} ❤️ ${name2}\n${shayari}\n❤️ Compatibility: ${rating}\n━━━━━━━━━━━━━━\n🔱 Powered by Raj xwd `,
+    body: `${header}\n━━━━━━━━━━━━━━\n💑 ${name1} ❤️ ${name2}\n${shayari}\n❤️ Compatibility: ${rating}\n━━━━━━━━━━━━━━\n🔱 Powered by 𝐑𝐈𝐒𝐇𝐔 `,
     mentions: [{ tag: name2, id: id2 }],
     attachment: fs.createReadStream(pathImg)
   }, event.threadID, () => fs.unlinkSync(pathImg), event.messageID);
