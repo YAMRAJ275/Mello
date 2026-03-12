@@ -16,7 +16,7 @@ module.exports.run = async function({ api, event }) {
     const moment = require("moment-timezone");
     const currentTime = moment.tz("Asia/Kolkata").format("『D/MM/YYYY』 【HH:mm:ss】");
 
-    const botInfo = `=== 𝙍𝘼𝙅 𝙓𝙒𝘿 '𝙎 𝘽𝙊𝙏 ===\n\n`
+    const botInfo = `=== 𝙍𝐈𝐒𝐇𝐔 '𝙎 𝘽𝙊𝙏 ===\n\n`
         + `☄️ 𝘽𝙊𝙏 𝙉𝘼𝙈𝙀 ☄️ »» ${global.config.BOTNAME}\n`
         + `🌸 𝙋𝙍𝙀𝙁𝙄𝙓 🌸 »» ${global.config.PREFIX} ««\n\n`
         + `🥳 𝙐𝙋𝙏𝙄𝙈𝙀 🥳\n`
