@@ -4,7 +4,7 @@ module.exports.config = {
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭", 
-	description: "hihihihi",
+	description: "hihihi",
 	commandCategory: "no prefix",
 	usages: "chocolate",
     cooldowns: 5, 
