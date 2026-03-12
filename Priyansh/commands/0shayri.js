@@ -28,14 +28,14 @@ module.exports.run = async function ({ api, event, args }) {
     // Toggle auto-reply ON
     if (userMessage.toLowerCase() === "on") {
         autoReplyEnabled[senderID] = true;
-        return api.sendMessage("Hyee baby! 😘Raj thakur ne mujhe chalu kar diya ❤️😀❤️", threadID, messageID);
+        return api.sendMessage("Hyee baby! 😘Rishu ne mujhe chalu kar diya ❤️😀❤️", threadID, messageID);
     }
 
     // Toggle auto-reply OFF
     if (userMessage.toLowerCase() === "off") {
         autoReplyEnabled[senderID] = false;
         chatHistories[senderID] = [];
-        return api.sendMessage("Hmm! 😒Raj thakur ne mujhe off kar diya 🥺", threadID, messageID);
+        return api.sendMessage("Hmm! 😒Rishu ne mujhe off kar diya 🥺", threadID, messageID);
     }
 
     // If auto-reply is OFF and message doesn't start with name, ignore
@@ -78,7 +78,7 @@ module.exports.run = async function ({ api, event, args }) {
         api.setMessageReaction("✅", messageID, () => {}, true);
     } catch (error) {
         console.error("Error:", error);
-        api.sendMessage("Oops baby! 😔 me thoda confuse ho gayi… thodi der baad try karo na please! 💋", threadID, messageID);
+        api.sendMessage("Oops baby! 😔 me thoda confuse ho gaya… thodi der baad try karo na please! 🙈", threadID, messageID);
         api.setMessageReaction("❌", messageID, () => {}, true);
     }
 };
