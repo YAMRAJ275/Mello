@@ -54,7 +54,7 @@ module.exports.run = async ({ api, event, args }) => {
     }
 
     api.sendMessage({
-      body: `📸 Here's your *${count}* Couple DP (${query})\n🖤 Powered by Rudra x raj xd `,
+      body: `📸 Here's your *${count}* Couple DP (${query})\n🖤 Powered by Rishu x Rishikesh`,
       attachment: attachments
     }, event.threadID, () => {
       for (let i = 0; i < images.length; i++) {
