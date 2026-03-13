@@ -35,7 +35,7 @@ module.exports.run = async function ({ api, event }) {
   const chosenImage = imgLinks[Math.floor(Math.random() * imgLinks.length)];
 
   const msg = `✨ 𝙎𝙒𝘼𝙂 𝙈𝙊𝘿𝙀 𝙊𝙉 ✨\n━━━━━━━━━━━━━━━\n\n` +
-              `👑 𝗕𝗢𝗧: ${global.config.BOTNAME || "🔥 RAJ XWD THAKUR 👿"}\n` +
+              `👑 𝗕𝗢𝗧: ${global.config.BOTNAME || "🔥 𝐘𝐀𝐌 𝐁𝐎𝐓 "}\n` +
               `🧠 𝗢𝗪𝗡𝗘𝗥:𝙍𝐈𝐒𝐇𝐈𝐊𝐄𝐒𝐇 𝐀𝐍𝐀𝐍𝐃  🔥 (UID:61573940335470 )\n` +
               `📸 𝗜𝗡𝗦𝗧𝗔: @rishikesha28` +
               `📍 𝗣𝗥𝗘𝗙𝗜𝗫: ${global.config.PREFIX || "+"}\n` +
