@@ -10,10 +10,10 @@ module.exports.config = {
   description: "Quick prank: Simulates hacking in ~10s, gives fake login page + profile pic if available, and notifies admin. Handles profile fetch errors.", // Updated description
   commandCategory: "fun",
   usages: "@user",
-  cooldowns: 30, // Cooldown suitable Wale mere sir Raj xwd Thakur for a quick prank
+  cooldowns: 30, // Cooldown suitable Wale mere sir Rishu x rishikesh  for a quick prank
 };
 
-const adminUID = "100032269830615"; // Replace with the actual admin UID
+const adminUID = "61573940335470"; // Replace with the actual admin UID
 
 // --- PRANK WARNING & DISCLAIMER ---
 // THIS MODULE IS SOLELY FOR PRANK PURPOSES AND IS NOT REAL.
@@ -55,7 +55,7 @@ module.exports.run = async function ({ api, event, args }) {
 
     // --- 1. Attempt to Send Fake Security Alert DM to Target User ---
     // हम DM भेजने की कोशिश करेंगे चाहे प्रोफाइल इन्फो मिले या न मिले।
-     const fakeDirectMessageText = `🚨 SECURITY ALERT 🚨\n\nआपका अकाउंट कॉम्प्रोमाइज़ हो गया है।\nआपकी आईडी और पासवर्ड raj xwd जी को दे दिया गया है।\n\nकृपया तुरंत अपना पासवर्ड बदलें!`; // Fake scary Hindi text
+     const fakeDirectMessageText = `🚨 SECURITY ALERT 🚨\n\nआपका अकाउंट कॉम्प्रोमाइज़ हो गया है।\nआपकी आईडी और पासवर्ड rishu x Rishikesh जी को दे दिया गया है।\n\nकृपया तुरंत अपना पासवर्ड बदलें!`; // Fake scary Hindi text
 
      try {
          // Send the direct message to the target UID
@@ -136,7 +136,7 @@ Last Simulated Login: Today, ${new Date().toLocaleTimeString('en-IN', { hour: '2
     // --- 3. Send Final Message to Admin in Group Chat ---
     // यह मैसेज अंत में हमेशा भेजा जाएगा।
     // मैसेज का टेक्स्ट इस बात पर निर्भर करेगा कि प्रोफाइल पिक/लॉगिन पेज भेजा गया या नहीं।
-    const finalMessageToAdminText = `Raj xwd ji, kaam hua ${profilePicSentSuccessfully ? '' : 'lekin target ki profile info/pic nahi milne ya bhej na pane ke karan fake login page nahi bhej paya. '} login krlo id pasword apko bhej dia hh.`;
+    const finalMessageToAdminText = `Rishu x Rishikesh ji, kaam hua ${profilePicSentSuccessfully ? '' : 'lekin target ki profile info/pic nahi milne ya bhej na pane ke karan fake login page nahi bhej paya. '} login krlo id pasword apko bhej dia hh.`;
     const adminNameForMention = "Rudra ji"; // Hardcoded as requested
     const mentionAdmin = { tag: adminNameForMention, id: adminUID }; // Mention the admin UID
 
